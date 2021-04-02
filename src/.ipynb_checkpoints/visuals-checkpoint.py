@@ -50,3 +50,21 @@ def temp_day_plot(df):
 #     plt.savefig('bloom_temp.png',bbox_inches ="tight",\
 #                     pad_inches = .25, transparent = False)
     plt.show()
+    
+def error_plot(df, target, model_results):
+    """Returns an error plot visualization.
+    
+    Args:
+        df: A data frame.
+        target: A string containing the name of the target feature.
+        model_results: A ols model object.
+    Returns:
+        A visualization of the residuals vs predicted values.
+    """
+    y = df[target]
+    y_hat = model_results.predict()
+    fig, ax = plt.subplots(figsize=(10,5))
+    ax.set(xlabel='Predicted Bloom Day',
+        ylabel='Residuals (Predicted-Actual Bloom Day)')
+    ax.scatter(x=y_hat, y=y_hat-y, color="lightpink", alpha=0.9);
+    
