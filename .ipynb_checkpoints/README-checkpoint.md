@@ -4,6 +4,8 @@
 
 ## Background
 
+Cherry blossom viewing (known as hanami in Japanese) has been an important part of Japanese culture for thousands of years, and it has been chronicled in poems, literature, and official documents since at least the 800s. Because of this long historical record we can track the date of the peak bloom day of the sakura (cherry blossom trees) and how it has changed over time.
+
 ## Purpose
 
 Descriptive analysis on the Cherry Blossom data set to determine if there are trends in the peak bloom days for Kyoto sakura over time.
