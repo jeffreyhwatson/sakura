@@ -1,6 +1,6 @@
 # Sakura Bloom Analysis
 
-A small side-project for undertaken practice and personal enjoyment.
+A small side-project undertaken for practice and personal enjoyment.
 
 ![sakura](images/Cherry_Blossom.jpeg)
 
