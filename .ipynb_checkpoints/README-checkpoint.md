@@ -71,7 +71,7 @@ Our intercept suggests that for an average March temperature in Kyoto of 0 degre
 
 ## Linear Regression Assumptions
 
-The model and data were found to adhere to most of the assumptions of linear regression. The only assumption broken was the homoscedasticity of the residuals.
+The model and data were found to adhere to most of the assumptions of linear regression. The only assumption broken was homoscedasticity of the residuals.
 
 ## Conclusion
 
