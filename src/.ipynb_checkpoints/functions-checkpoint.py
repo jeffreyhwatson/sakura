@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # global variables
 
+=======
+>>>>>>> 33a4432043b9ff16f245d97f63b5c937270cbeb5
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from statsmodels.formula.api import ols
