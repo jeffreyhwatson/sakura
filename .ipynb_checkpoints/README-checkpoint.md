@@ -1,6 +1,6 @@
 # Sakura Bloom Analysis
 
-![sakura](images/sakura.jpeg)
+![sakura](images/Cherry_Blossom.jpeg)
 
 ## Background
 
@@ -57,7 +57,7 @@ Lastly, plotting peak bloom against temperature shows a correlation between high
 
 ## Linear Regression
 
-A simple linear regression model was created with `Full-flowering date (DOY)` as the target and `F` (Mean Temp in Kyoto for March) as the predictor. R-squared and the correlation coefficient for the fahrenheit temperature feature were found and the data and model were checked for adherence to the assumptions of linear reggression.
+A simple linear regression model was created with `Full-flowering date (DOY)` as the target and `F` (Mean Temp in Kyoto for March) as the predictor. R-squared and the correlation coefficient for the fahrenheit temperature feature were found and the data and model were checked for adherence to the assumptions of linear regression.
 
 ## Regression Formula
 
@@ -71,7 +71,9 @@ Our intercept suggests that for an average March temperature in Kyoto of 0 degre
 
 ## Linear Regression Assumptions
 
-The model and data were found to adhere to most of the assumptions of linear regression. The only assumption broken was homoscedasticity of the residuals.
+The model and data were found to adhere to most of the assumptions of linear regression. The only assumption broken was homoscedasticity of the residuals. However, the residuals look somewhat reasonably distributed upon inspection, so the hetroscedasticity isn't severe.
+
+![residuals](images/residuals.png)
 
 ## Conclusion
 

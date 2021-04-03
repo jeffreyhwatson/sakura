@@ -69,4 +69,6 @@ def error_plot(df, target, model_results):
     ax.set(xlabel='Predicted Bloom Day',
         ylabel='Residuals (Predicted-Actual Bloom Day)')
     ax.scatter(x=y_hat, y=y_hat-y, color="lightpink", alpha=0.9);
+    plt.savefig('residuals.png',bbox_inches ="tight",\
+                    pad_inches = .25, transparent = False)
     

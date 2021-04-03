@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # global variables
 
-=======
->>>>>>> 33a4432043b9ff16f245d97f63b5c937270cbeb5
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from statsmodels.formula.api import ols
@@ -34,19 +31,3 @@ def rainbow(model_results):
     print("Rainbow statistic:", rainbow_statistic)
     print("Rainbow p-value:", rainbow_p_value)
 
-def bp_test(df, target, model_results):
-    """Returns the multiplier and p-value of a breusch-pagan test.
-    
-    Args:
-        df: A data frame.
-        target: A string containing the name of the target feature.
-        model_results: A ols model object
-    Returns:
-            A printout of the multiplier and p-value of aa breusch-pagan test.
-    """
-    cols = df.columns[1:]
-    y = df[target]
-    y_hat = model_results.predict()
-    lm, lm_p_value, fvalue, f_p_value = het_breuschpagan(y-y_hat, df[cols])
-    print('Lagrange Multiplier p-value:', lm_p_value)
-    print('F-statistic p-value:', f_p_value)
