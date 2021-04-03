@@ -81,22 +81,23 @@ The data do indicate that the peak bloom day has been occurring earlier in the y
 
 ## Repo Structure
 ```
+── README.md
 ├── data
 │   ├── KyotoFullFlower7.xls
 │   └── TempReconst7Final.xls
 ├── images
+│   ├── Cherry_Blossom.jpeg
 │   ├── bloom_temp.png
 │   ├── bloom_year.png
 │   ├── march_temp.png
 │   ├── mean_bloom.png
-│   └── sakura.jpeg
+│   └── residuals.png
 ├── notebooks
-│   ├── eda
-│   │   └── sakura_data.ipynb
-│   └── report
-├── sakura.md
+│   └── eda
+│       └── sakura_eda.ipynb
 ├── sakura.yml
 └── src
+    ├── functions.py
     └── visuals.py
 
 ```
