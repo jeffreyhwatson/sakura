@@ -29,7 +29,7 @@ To setup the project environment, cd into the project folder and run `conda env 
 
 Python, Pandas, and Seaborn were used for data preparation, analysis and visualization.
 
-Details can be found in the [EDA Notebook](notebooks/eda/sakura_data.ipynb).
+Details can be found in the [EDA Notebook](notebooks/eda/sakura_eda.ipynb).
 
 - After loading the spreadsheets into two data frames, the keys for each data set were separated from the raw data and collected into smaller lookup data frames.
 
