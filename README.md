@@ -59,7 +59,6 @@ Lastly, plotting peak bloom against temperature shows a correlation between high
 
 A simple linear regression model was created with `Full-flowering date (DOY)` as the target and `F` (Mean Temp in Kyoto for March) as the predictor. R-squared and the correlation coefficient for the fahrenheit temperature feature were found and the data and model were checked for adherence to the assumptions of linear reggression.
 
-<<<<<<< HEAD
 ## Regression Formula
 
 `D = 189.14 -1.97T`
@@ -73,7 +72,7 @@ Our intercept suggests that for an average March temperature in Kyoto of 0 degre
 ## Linear Regression Assumptions
 
 The model and data were found to adhere to most of the assumptions of linear regression. The only assumption broken was the homoscedasticity of the residuals.
-=======
+
 ## Interpretation
 
 Our intercept suggests that if the average March temperature in Kyoto is 0 degrees fahrenheit, the mean peak bloom day will occur on the 189th day of the year. The fahrenheit (F) coefficient indicates that for every 1 degree rise in mean March temperature, on average the peak bloom day will occur 1.96 days earlier. Lastly, r-squared of .146 says that around 14% of the variance in peak bloom dates can be accounted for through the mean March temperature in Kyoto.
@@ -81,7 +80,6 @@ Our intercept suggests that if the average March temperature in Kyoto is 0 degre
 ## Linear Regression Assumptions
 
 The model and data were found to be mostly inline with the assumptions of linear regression. The only assumption broken was the homoscadasticity of the residuals.
->>>>>>> 33a4432043b9ff16f245d97f63b5c937270cbeb5
 
 ## Conclusion
 
