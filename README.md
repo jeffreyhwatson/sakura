@@ -29,7 +29,7 @@ To setup the project environment, cd into the project folder and run `conda env 
 
 #### Methods & Data Preperation
 
-Python, Pandas, and Seaborn were used for data preparation, analysis and visualization.
+Python, Pandas, Statsmodels, and Seaborn were used for data preparation, analysis and visualization.
 
 Details can be found in the [EDA Notebook](notebooks/eda/sakura_eda.ipynb).
 
