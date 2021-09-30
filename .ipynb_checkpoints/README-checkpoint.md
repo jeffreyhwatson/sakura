@@ -12,6 +12,18 @@ Cherry blossom viewing (known as hanami in Japanese) has been an important part 
 
 Descriptive analysis on the Cherry Blossom data set to determine if there are trends in the peak bloom days for Kyoto sakura over time. If trends are found, simple modeling will be employed to further investigate the data.
 
+## Repo Structure
+```
+.
+├── README.md
+├── data
+├── images
+├── notebooks
+│   └── eda
+├── sakura.yml
+└── src
+```
+
 ## Setup Instructions
 To setup the project environment, cd into the project folder and run `conda env create --file sakura.yml` in your terminal. Next, `run conda activate sakura`.
 
@@ -61,15 +73,19 @@ Lastly, plotting peak bloom against temperature shows a correlation between high
 
 A simple linear regression model was created with `Full-flowering date (DOY)` as the target and `F` (Mean Temp in Kyoto for March) as the predictor. R-squared and the correlation coefficient for the fahrenheit temperature feature were found and the data and model were checked for adherence to the assumptions of linear regression.
 
+## R-Squared
+
+***R<sup>2</sup> = .146***
+
 ## Regression Formula
 
-`D = 189.14 -1.97T`
+***D = 189.14 -1.97T***
 
 Where D is the Peak Bloom Day and T is the average temperature for March in Kyoto for the year.
 
 ## Interpretation
 
-Our intercept suggests that for an average March temperature in Kyoto of 0 degrees fahrenheit, the mean peak bloom day will occur on the 189th day of the year. The fahrenheit (F) coefficient indicates that for every 1 degree rise in mean March temperature, the peak bloom day will occur 1.97 days earlier on average. Lastly, the model's r-squared value of .146 says that around 15% of the variance in peak bloom dates can be accounted for through the mean March temperature in Kyoto.
+Our intercept suggests that for an average March temperature in Kyoto of 0 degrees fahrenheit, the mean peak bloom day will occur on the 189th day of the year. The fahrenheit (F) coefficient indicates that for every 1 degree rise in mean March temperature, the peak bloom day will occur 1.97 days earlier on average. Lastly, the model's R-squared value of .146 says that around 15% of the variance in peak bloom dates can be accounted for through the mean March temperature in Kyoto.
 
 ## Linear Regression Assumptions
 
@@ -80,26 +96,3 @@ The model and data were found to adhere to most of the assumptions of linear reg
 ## Conclusion
 
 The data do indicate that the peak bloom day has been occurring earlier in the year over time and that this is correlated with a rise in mean temperatures for March in Kyoto. Our simple model suggests that for every 1 degree fahrenheit rise in mean temperature for March, the peak bloom day will occur 1.96 days earlier on average. We also find that mean March temperature accounts for about 15% of the variance in peak bloom day.
-
-## Repo Structure
-```
-── README.md
-├── data
-│   ├── KyotoFullFlower7.xls
-│   └── TempReconst7Final.xls
-├── images
-│   ├── Cherry_Blossom.jpeg
-│   ├── bloom_temp.png
-│   ├── bloom_year.png
-│   ├── march_temp.png
-│   ├── mean_bloom.png
-│   └── residuals.png
-├── notebooks
-│   └── eda
-│       └── sakura_eda.ipynb
-├── sakura.yml
-└── src
-    ├── functions.py
-    └── visuals.py
-
-```
