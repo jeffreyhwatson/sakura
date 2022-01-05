@@ -25,7 +25,7 @@ Descriptive analysis on the Cherry Blossom data set to determine if there are tr
 ```
 
 ## Setup Instructions
-To setup the project environment, cd into the project folder and run `conda env create --file sakura.yml` in your terminal. Next, `run conda activate sakura`.
+To setup the project environment, cd into the project folder and run `conda env create --file sakura.yml` in your terminal. Next, run `conda activate sakura`.
 
 ## Data
 
